@@ -6,5 +6,5 @@ function palindrome(str) {
     return letNum.join('') === letNum.reverse().join('');
   
   }
-  // return output
+  // return true if is a palindrome else false
   console.log(palindrome("eye")); 
