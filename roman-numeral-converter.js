@@ -4,27 +4,41 @@
 // CHALLENGE : Convert the given number into a roman numeral.
 
 /*
-   ---------------------------------------------------------
-  | Roman Numerals  |   X   |   IX   |  V   |   IV  |   1   |
-   ---------------------------------------------------------
-  | Arabic Numerals |   10  |   9   |   5   |   4   |   I   |
-   --------------------------------------------------------- 
+   ------------------------------------------------------------------------------------
+  | Roman Numerals  |    M    |    D    |    C    |     L    |    X    |   V   |   1   |
+   ------------------------------------------------------------------------------------
+  | Arabic Numerals |   1000  |   500   |   100   |    50    |    10   |   5   |   I   |
+   ------------------------------------------------------------------------------------ 
+
+
  */
 
 function convertToRoman(num) {
-    // set roman numerals
-    const romanNum = ['X', 'IX', 'V', 'IV', 'I'];
+    // 1 ) set romanToArab table (object) 
+    // 2 ) all numerals should convert to upper-case
+    const romanToArab = {
+        M : 1000, CM : 900, D : 500, CD : 400, C : 100, XC : 90, L : 50, XL : 40, X : 10, IX : 9, V : 5, IV : 4, I : 1,    
+    };
     
-    // set arabic numerals
-    const arabNum = [10, 9, 5, 4, 1]
-    // 2) converting to roman numerals
+    // 3 ) set numAccumulator
+    let numLog = '';
+    for (const main in romanToArab) {
+        // 4 ) converting to roman numerals
+        const numCheck = romanToArab[main];
 
-    // 2) all numerals should convert to upper-case
+        // 5 ) when currentNum <= num
+        while (numCheck <= num) {
+            num -= numCheck; 
+            numLog += main;
+        }
+    }
 
-    // 3) return string === 
-    return num;
+
+    // 6 ) return string === numLog
+    return numLog;
 }
 
+// 7 ) use console.log to output the numeral
 convertToRoman(37);
 
 
