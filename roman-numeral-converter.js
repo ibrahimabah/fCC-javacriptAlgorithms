@@ -13,12 +13,19 @@
    ----------------------------------
    |     V         |        5       |
    ----------------------------------
+   |     IV        |        4       |
+   ----------------------------------
    |     I         |        1       |
    ----------------------------------  
  */
 
 function convertToRoman(num) {
-    // 1) converting to roman numerals
+    // set roman numerals
+    const romanNum = ['X', 'IX', 'V', 'IV', 'I'];
+    
+    // set arabic numerals
+    const arabNum = [10, 9, 5, 4, 1]
+    // 2) converting to roman numerals
 
     // 2) all numerals should convert to upper-case
 
