@@ -43,4 +43,5 @@ function rot13(str) {
     return letterChecker;
 }
 
-rot13("SERR PBQR PNZC")
+// run to see the results
+// console.log(rot13("SERR PBQR PNZC"))
