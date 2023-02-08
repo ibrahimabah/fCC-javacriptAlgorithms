@@ -9,7 +9,6 @@
 
     reference = "Hello"
     accumulator = " "
-
 */
 
 function rot13(str) {
