@@ -1,6 +1,5 @@
 // Telephone Number Validator
 // CHALLENGE : validate or reject US telephone numbers based provided formats
-
 /*
     I used Regular Expressions to complete this challenge
  */
