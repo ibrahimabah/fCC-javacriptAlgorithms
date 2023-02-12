@@ -35,6 +35,7 @@ let unitArr = [
       return output
     }
   
+    // Return  "INSUFFICIENT_FUNDS" if cash-in-drawer is less than due change, or you cannot return exact change.
     if (register.total < change) {
       output.status = "INSUFFICIENT_FUNDS"
       return output
