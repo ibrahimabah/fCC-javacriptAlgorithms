@@ -15,6 +15,7 @@ let unitArr = [
     { name: "PENNY", val: 0.01},
   ]
   
+  // start of function setup
   function checkCashRegister(price, cash, cid) {
     let output = { status: null, change: [] }
     let change = cash - price
