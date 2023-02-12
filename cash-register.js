@@ -29,6 +29,7 @@ let unitArr = [
       { total: 0}
     )
   
+    // The checkCashRegister() should always return an object with a status key and a change key.
     if (register.total === change) {
       output.status = "CLOSED"
       output.change = cid
